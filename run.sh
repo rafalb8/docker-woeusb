@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ $# -le 1 ]; then
-    echo "$0 <device> <path to iso>"
+    echo "curl -LJs https://tinyurl.com/docker-woeusb | $0 <device> <path to iso>"
     exit 1
 fi
 

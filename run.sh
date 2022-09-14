@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if [ $# -le 1 ]; then
+    echo "$0 <device> <path to iso>"
+    exit 1
+fi
+
 DEVICE="$1"
 IMAGE=$(realpath $2)
 DIR=$(dirname $IMAGE)
